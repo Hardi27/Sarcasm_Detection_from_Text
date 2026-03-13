@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efeae2;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.chat-box {
+  width: 380px;
+  height: 640px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.model-note {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #3b3b3b;
+  background: #f2f2f2;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 12px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background-color: #efeae2;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+
+.input-wrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 45px 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  resize: none;
+  min-height: 44px;
+  max-height: 120px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mic-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #555;
+}
+
+.mic-btn.recording {
+  color: #d11a2a;
+}
+
+.mic-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
+}
+
+.send-btn {
+  margin-left: 8px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #128c7e;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #0b6f63;
+}
